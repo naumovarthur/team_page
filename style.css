@@ -1,0 +1,155 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  margin: 0;
+}
+
+:root {
+  --font: "PT Serif", serif;
+  --font-alt: "Poppins", sans-serif;
+  --primary-color: #ff7a4e;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.5rem;
+  --text-xl: 2rem;
+
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+}
+
+.main-wrapper {
+  max-width: 932px;
+  margin: 0 auto;
+  padding: 75px 12px 30px 12px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.head__title {
+  font-family: var(--font);
+  font-weight: bold;
+  font-size: var(--text-xl);
+  line-height: 48px;
+  letter-spacing: -0.045em;
+  flex: 55%;
+  margin: 0;
+}
+
+.head__info {
+  flex: 45%;
+}
+
+.head__subtitle {
+  font-family: var(--font-alt);
+  font-weight: 600;
+  font-size: var(--text-md);
+  line-height: 27px;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.head__text {
+  font-family: var(--font-alt);
+  font-size: var(--text-md);
+  line-height: 27px;
+  margin: 0;
+}
+
+.mates {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mate {
+  position: relative;
+  margin-bottom: var(--space-md);
+}
+
+.mate:nth-child(3n + 2) {
+  margin-top: 100px;
+}
+
+.mate__role {
+  margin: 0;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 0;
+  left: 265px;
+  width: 300px;
+  transform-origin: 0 0;
+  font-family: var(--font);
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.mate__photo {
+  margin-right: 30px;
+}
+
+.mate__name {
+  margin: 0;
+  font-family: var(--font-alt);
+  font-weight: 600;
+  font-size: var(--text-md);
+  line-height: 27px;
+  margin-top: 10px;
+}
+
+.copyright {
+  font-family: "Montserrat", sans-serif;
+  color: #a9a9a9;
+  font-weight: 600;
+  font-size: var(--text-xs);
+  text-align: center;
+  line-height: 17px;
+  margin-top: 75px;
+}
+
+@media screen and (max-width: 760px) {
+  .body {
+    font-size: 14px;
+  }
+
+  .main-wrapper {
+    padding-top: 15px;
+  }
+
+  .head {
+    display: block;
+  }
+
+  .head__title {
+    margin-bottom: 35px;
+  }
+
+  .mate:nth-child(3n + 2) {
+    margin-top: 0;
+  }
+
+  .mate:nth-child(2n) {
+    margin-top: 60px;
+  }
+
+  .mate__photo {
+    width: 150px;
+    height: 230px;
+  }
+
+  .mate__role {
+    left: 170px;
+  }
+}
