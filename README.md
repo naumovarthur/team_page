@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://naumovarthur.github.io/team_page">
+    <a href="https://naumovarthur.github.io/team_page/index">
       Demo
     </a>
     <span> | </span>
